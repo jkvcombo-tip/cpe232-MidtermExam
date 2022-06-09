@@ -24,7 +24,7 @@
 - name: Create Nginx server block file
   copy:
     src: config_files/combo_domain
-    dest: /etc/nginx/sites-available/ervie_domain
+    dest: /etc/nginx/sites-available/combo_domain
 
 - name: Create symbolic link to sites-enabled
   file:
@@ -32,6 +32,7 @@
     dest: /etc/nginx/sites-enabled/combo_domain    
     state: link
   register: symbolic_link
+  #  force: yes
 
 - name: Check the configuration for syntax errors
   shell: "nginx -t"

@@ -161,3 +161,4 @@
     state: restarted
     enabled: yes
   when: config_auth.changed
+  

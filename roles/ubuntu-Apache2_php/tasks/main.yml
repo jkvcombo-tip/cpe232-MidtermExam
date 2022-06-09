@@ -37,4 +37,4 @@
 
 - name: test PHP if up
   uri:
-    url: http://192.168.56.112/info.php
+    url: http://192.168.56.113/info.php
